@@ -1,0 +1,64 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/reseter.css/2.0.0/reseter.min.css');
+
+/**
+ * Resets the margin and padding of all elements to 0.
+ */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cls-2 {
+    transform: translate(-70px, -90px);
+}
+
+.cls-8 {
+    animation: rotation 5s infinite linear;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+.cls-3 {
+    animation: rotation 10s infinite linear;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+.cls-3-op {
+    animation: rotation 20s infinite linear;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+// 위에서 굴려내려오는 공
+.cls-10-op {
+    animation: rotation2 1s linear;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+@keyframes rotation2 {
+    0% {
+        transform: translateY(-200px);
+    }
+    80% {
+        transform: translateY(0);
+    }
+    95% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
